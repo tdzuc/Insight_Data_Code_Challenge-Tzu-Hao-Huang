@@ -1,9 +1,10 @@
 # Table of Contents
 1. [Input Dataset]
-2. [Instructions](README.md#instructions)
-3. [Output](README.md#output)
+2. [Instructions]
+3. [Output]
 
 # Input Dataset
+
 Put the input Dataset in input folder, and the file name should be "h1b_input.csv"
 
 # Instructions
