@@ -66,8 +66,11 @@ class Top:
         _OCCUPATIONS_LIST = sorted(_OCCUPATIONS_LIST, reverse=True)
         top_10_state = []
         top_10_occupation = []
-        for element in _STATES_LIST[:10]:
+        for element in _STATES_LIST[:9]:
             top_10_state.append('%s;%d;%.1f%s\n' % (element.key, element.value,
+                                                    100 * element.value / float(self.certified_number),
+                                                    '%'))
+        top_10_state.append('%s;%d;%.1f%s' % (_STATES_LIST[9].key, _STATES_LIST[9].value,
                                                     100 * element.value / float(self.certified_number),
                                                     '%'))
         for element in _OCCUPATIONS_LIST[:10]:
